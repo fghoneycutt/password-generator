@@ -45,16 +45,15 @@ function generatePassword(){
         for (var i =0; i<n; i++){
             howManyOfType[(Math.floor(Math.random()*n))%m]++;
         }
-     }
-     for (i=0; i<howManyOfType.length; i++){
-          if(howManyOfType[i]= 0){
+        for (i=0; i<howManyOfType.length; i++){
+          if(howManyOfType[i]=== 0){
             randomNumsAddToLength(numTypesChosen, length);
           }
         }
-
+     }
+     
 
     randomNumsAddToLength (numTypesChosen, length);
-    alert(howManyOfType);
 
     //functions to output random elements of the four type arrays
     function randomLowercase (){
@@ -107,7 +106,6 @@ function generatePassword(){
     }
     shuffleArray(password);
     password= password.join("");
-    alert(password);
 
     return(password);
 }
